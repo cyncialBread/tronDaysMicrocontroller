@@ -9,11 +9,11 @@ input.buttonA.onEvent(ButtonEvent.Click, function () {
         light.showRing(
         `black black black black black black black black black black`
         )
-        pause(100)
+        control.waitMicros(50)
         light.showRing(
         `green green green green green green green green green green`
         )
-        pause(100)
+        control.waitMicros(50)
     }
     makerController.player1.setAnalogThreshold(ArcadeAnalogButton.LeftRight, -500, 500)
     while (true) {
