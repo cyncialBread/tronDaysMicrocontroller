@@ -1,4 +1,4 @@
-input.buttonA.onEvent(ButtonEvent.Click, function () {
+input.buttonsAB.onEvent(ButtonEvent.Click, function () {
     begin = true
     pause(200)
     for (let index = 0; index <= 9; index++) {
