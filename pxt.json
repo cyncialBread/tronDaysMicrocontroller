@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "circuit-playground": "*",
-        "maker-controller": "github:microsoft/pxt-maker-controller#v0.0.7"
+        "maker-controller": "github:microsoft/pxt-maker-controller#v0.0.7",
+        "servo": "*"
     },
     "files": [
         "main.blocks",

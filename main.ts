@@ -16,8 +16,10 @@ input.buttonA.onEvent(ButtonEvent.Click, function () {
         control.waitMicros(50)
     }
     makerController.player1.setAnalogThreshold(ArcadeAnalogButton.LeftRight, -500, 500)
+    makerController.player1.setAnalogThreshold(ArcadeAnalogButton.DownUp, -500, 500)
     while (true) {
         makerController.player1.setAnalog(ArcadeAnalogButton.LeftRight, input.acceleration(Dimension.X))
+        makerController.player1.setAnalog(ArcadeAnalogButton.DownUp, input.acceleration(Dimension.Y))
         control.waitMicros(50)
     }
 })
